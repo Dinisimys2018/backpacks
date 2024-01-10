@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->float('weight')->default(0);
             $table->dateTime('date_of_production')->nullable();
-            $table->unsignedSmallInteger('shelf_life_days');
+            $table->unsignedSmallInteger('shelf_life_days')->nullable();
             $table->dateTime('date_of_expiration');
 
             $table->foreignId('unit_category_id')
