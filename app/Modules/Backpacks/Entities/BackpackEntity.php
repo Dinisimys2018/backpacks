@@ -2,7 +2,9 @@
 
 namespace App\Modules\Backpacks\Entities;
 
-final class BackpackEntity
+use App\Application\Entities\EntityInterface;
+
+final class BackpackEntity implements EntityInterface
 {
     private ?int $id = null;
 

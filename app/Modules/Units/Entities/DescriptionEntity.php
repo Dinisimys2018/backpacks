@@ -4,19 +4,15 @@ namespace App\Modules\Units\Entities;
 
 use App\Application\Entities\EntityInterface;
 use App\Modules\Units\Entities\ValueObjects\ShelfLife;
+use App\Modules\Units\Entities\ValueObjects\UnitMeasure;
 
-final class UnitEntity implements EntityInterface
+final class DescriptionEntity implements  EntityInterface
 {
     private ?int $id = null;
 
     public function __construct(
-        public string $name,
-        public int $backpackId,
-        public ShelfLife $shelfLife,
-        public int $quantity,
-        public int $weight = 0,
-        public ?int $unitCategoryId = null,
-        public ?int $descriptionId = null,
+        public int $unitGroupId,
+        public string $description
     )
     {
     }

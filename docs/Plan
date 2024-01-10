@@ -1,0 +1,16 @@
+1 - List of Backpacks
+| name | TOTAL weight | actions : [edit/show/delete] |
+| Denis| 20.00kg      | buttons
+
+ADD NEW Backpack
+
+2 - Page of Backpack Entity with list of Units:
+
+
+SQL: 
+- join unit_categories
+
+|category name | name | quantity | weight  | date of expiration | actions [edit/delete]
+| Fuds         | Meat |    10    |  2.00kg |    2024-10-01      | 
+
+ADD NEW Unit

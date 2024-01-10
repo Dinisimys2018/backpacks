@@ -2,14 +2,16 @@
 
 namespace App\Modules\UnitCategories\Entities;
 
-final class UnitCategoryEntity
+use App\Application\Entities\EntityInterface;
+
+final class UnitCategoryEntity implements EntityInterface
 {
     private ?int $id = null;
 
     public function __construct(
         public string $name,
         public ?string $description = null,
-        public ?int $parentUnitCategoryId = null,
+        public ?int $parentCategoryId = null,
     )
     {
     }
