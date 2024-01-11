@@ -4,12 +4,14 @@ namespace App\Modules\Units\Entities;
 
 use App\Application\Entities\EntityInterface;
 use App\Modules\Units\Entities\ValueObjects\ShelfLife;
+use App\Modules\Units\Entities\ValueObjects\UnitType;
 
 final class UnitEntity implements EntityInterface
 {
     private ?int $id = null;
 
     public function __construct(
+        public UnitType $type,
         public string $name,
         public int $backpackId,
         public ShelfLife $shelfLife,
@@ -17,6 +19,7 @@ final class UnitEntity implements EntityInterface
         public int $weight = 0,
         public ?int $unitCategoryId = null,
         public ?int $descriptionId = null,
+        public ?int $parentId = null,
     )
     {
     }

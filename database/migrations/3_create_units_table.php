@@ -28,7 +28,7 @@ return new class extends Migration
                 ->constrained()
                 ->nullOnDelete();
 
-            $table->foreignId('group_id')
+            $table->foreignId('parent_id')
                 ->nullable()
                 ->constrained('units')
                 ->cascadeOnDelete();
